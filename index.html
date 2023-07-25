@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Hub - Get fresh fruits in no time</title>
 
     <!-- tailwind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/2782cb5fb7.js" crossorigin="anonymous"></script>
 
     <!-- lato font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +28,7 @@
                     colors: {
                         'accent-red': '#F85559',
                         'accent-black': '#121212',
-                        'accent-grey': '##12121299',
+                        'accent-grey': '#12121299',
                     }
                 }
             }
@@ -43,6 +46,29 @@
 </head>
 
 <body>
+
+    <header class="max-w-screen-xl bg-accent-red my-9 rounded-full lg:mx-auto mx-4 pr-6 pl-14 p-6">
+        <nav class="flex justify-between items-center">
+            <ul class="flex text-base text-white font-medium gap-6 justify-between items-center ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="flex cursor-pointer gap-3 items-center justify-start">
+                <img class="w-11" src="./images/logo.png" alt="">
+                <h1 class="text-white text-4xl font-bold">Fruit Hub</h1>
+            </div>
+
+            <div class="flex gap-24 px-6 py-3 rounded-full justify-between bg-white items-center">
+                <input class="text-sm outline-none text-accent-grey" id="search" placeholder="Search Here" type="text">
+                <label for="search">
+                    <i class="fa-solid cursor-pointer fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
 
 </body>
 
