@@ -47,9 +47,11 @@
 
 <body>
 
-    <header class="max-w-screen-xl bg-accent-red my-9 rounded-full lg:mx-auto mx-4 pr-6 pl-14 p-6">
-        <nav class="flex justify-between items-center">
-            <ul class="flex text-base text-white font-medium gap-6 justify-between items-center ">
+    <!-- desktop and tablet header  -->
+
+    <header class="max-w-screen-xl bg-accent-red my-9 hidden sm:block rounded-full lg:mx-auto mx-4 pr-12 md:pr-6 md:pl-14 p-6">
+        <nav class="flex flex-row-reverse md:flex-row justify-between items-center">
+            <ul class="flex text-base text-white font-medium gap-6 justify-start items-center ">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Shop</a></li>
@@ -61,7 +63,7 @@
                 <h1 class="text-white text-4xl font-bold">Fruit Hub</h1>
             </div>
 
-            <div class="flex gap-24 px-6 py-3 rounded-full justify-between bg-white items-center">
+            <div class="gap-24 hidden md:flex px-6 py-3 rounded-full justify-between bg-white items-center">
                 <input class="text-sm outline-none text-accent-grey" id="search" placeholder="Search Here" type="text">
                 <label for="search">
                     <i class="fa-solid cursor-pointer fa-magnifying-glass"></i>
@@ -69,6 +71,34 @@
             </div>
         </nav>
     </header>
+
+    <!-- mobile header  -->
+
+    <div class="w-screen block sm:hidden pt-8 px-5 flex justify-between bg-white">
+        <div class="flex flex-1 cursor-pointer gap-3 items-center justify-start">
+            <img class="w-11" src="./images/logo.png" alt="">
+            <h1 class="text-accent-black text-4xl font-bold">Fruit Hub</h1>
+        </div>
+
+        <div class="">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm right-0 dropdown-content shadow-lg bg-base-100 rounded-box w-[calc(100vw-20px)] mt-3 z-10 p-2">
+                    <li><a class="text-base font-medium">Home</a></li>
+                    <li><a class="text-base font-medium">About</a></li>
+                    <li><a class="text-base font-medium">Shop</a></li>
+                    <li><a class="text-base font-medium">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </body>
 
