@@ -54,20 +54,34 @@
 
     <header
         class="max-w-screen-xl bg-accent-red my-9 hidden sm:block rounded-full lg:mx-auto mx-5 pr-12 md:pr-6 md:pl-14 p-6">
-        <nav class="flex flex-row-reverse md:flex-row justify-between items-center">
-            <ul class="flex text-base text-white font-medium gap-6 justify-start items-center ">
+        <nav class="flex justify-between items-center">
+            <ul class="hidden lg:flex text-base text-white font-medium gap-6 justify-start items-center ">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
+            <!-- dropdown for tablet  -->
+            <div class="lg:hidden dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <i class="fa-solid text-white text-2xl fa-bars"></i>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+
             <div class="flex cursor-pointer gap-3 items-center justify-start">
                 <img class="w-11" src="./images/logo.png" alt="">
                 <h1 class="text-white text-4xl font-bold">Fruit Hub</h1>
             </div>
 
-            <div class="gap-24 hidden lg:flex px-6 py-3 rounded-full justify-between bg-white items-center">
+            <div class="gap-24 flex px-6 py-3 rounded-full justify-between bg-white items-center">
                 <input class="text-sm outline-none text-accent-grey" id="search" placeholder="Search Here" type="text">
                 <label for="search">
                     <i class="fa-solid cursor-pointer fa-magnifying-glass"></i>
