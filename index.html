@@ -49,7 +49,8 @@
 
     <!-- desktop and tablet header  -->
 
-    <header class="max-w-screen-xl bg-accent-red my-9 hidden sm:block rounded-full lg:mx-auto mx-4 pr-12 md:pr-6 md:pl-14 p-6">
+    <header
+        class="max-w-screen-xl bg-accent-red my-9 hidden sm:block rounded-full lg:mx-auto mx-5 pr-12 md:pr-6 md:pl-14 p-6">
         <nav class="flex flex-row-reverse md:flex-row justify-between items-center">
             <ul class="flex text-base text-white font-medium gap-6 justify-start items-center ">
                 <li><a href="#">Home</a></li>
@@ -74,7 +75,7 @@
 
     <!-- mobile header  -->
 
-    <div class="w-screen block sm:hidden pt-8 px-5 flex justify-between bg-white">
+    <div class="w-screen sm:hidden pt-8 px-5 flex justify-between bg-white">
         <div class="flex flex-1 cursor-pointer gap-3 items-center justify-start">
             <img class="w-11" src="./images/logo.png" alt="">
             <h1 class="text-accent-black text-4xl font-bold">Fruit Hub</h1>
@@ -95,10 +96,139 @@
                     <li><a class="text-base font-medium">About</a></li>
                     <li><a class="text-base font-medium">Shop</a></li>
                     <li><a class="text-base font-medium">contact</a></li>
+                    <li>
+                        <div class="gap-24 flex pl-3 pr-6 py-3 rounded-full justify-between bg-white items-center">
+                            <input class="text-sm outline-none text-accent-grey" id="search" placeholder="Search Here"
+                                type="text">
+                            <label for="search">
+                                <i class="fa-solid cursor-pointer fa-magnifying-glass"></i>
+                            </label>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <!-- banner start  -->
+
+    <section class="text-center max-w-screen-xl mx-5 lg:mx-auto ">
+        <div class="carousel w-full">
+
+            <!-- slide 1  -->
+
+            <div id="slide1" class="carousel-item h-fit sm:h-auto relative w-full">
+
+
+                <div class="hero rounded-lg" style="background-image: url('./images/banner1.png');">
+                    <div class="w-full h-full rounded-lg bg-gradient-to-b from-accent-black to-transparent">
+                    </div>
+                    <div class="hero-content py-7 sm:pt-20 sm:pb-52 text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="sm:mb-5 mb-1 text-3xl sm:text-6xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+
+                            <p class="sm:mb-7 mb-3 text-base text-white font-normal">We supply highly quality organic products
+                            </p>
+                            <button
+                                class="btn btn-error bg-accent-red border-none capitalize text-base px-6 hover:bg-accent-red font-bold text-white">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- slide 2  -->
+
+            <div id="slide2" class="carousel-item h-fit sm:h-auto relative w-full">
+
+
+                <div class="hero rounded-lg" style="background-image: url('./images/banner2.png');">
+                    <div class="w-full h-full rounded-lg bg-gradient-to-b from-accent-black to-transparent">
+                    </div>
+                    <div class="hero-content py-7 sm:pt-20 sm:pb-52 text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="sm:mb-5 mb-1 text-3xl sm:text-6xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+
+                            <p class="sm:mb-7 mb-3 text-base text-white font-normal">We supply highly quality organic products
+                            </p>
+                            <button
+                                class="btn btn-error bg-accent-red border-none capitalize text-base px-6 hover:bg-accent-red font-bold text-white">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- slide 3 -->
+
+            <div id="slide3" class="carousel-item h-fit sm:h-auto relative w-full">
+
+
+                <div class="hero rounded-lg" style="background-image: url('./images/banner3.png');">
+                    <div class="w-full h-full rounded-lg bg-gradient-to-b from-accent-black to-transparent">
+                    </div>
+                    <div class="hero-content py-7 sm:pt-20 sm:pb-52 text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="sm:mb-5 mb-1 text-3xl sm:text-6xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+
+                            <p class="sm:mb-7 mb-3 text-base text-white font-normal">We supply highly quality organic products
+                            </p>
+                            <button
+                                class="btn btn-error bg-accent-red border-none capitalize text-base px-6 hover:bg-accent-red font-bold text-white">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- slide 4  -->
+
+            <div id="slide4" class="carousel-item h-fit sm:h-auto relative w-full">
+
+
+                <div class="hero rounded-lg" style="background-image: url('./images/banner4.png');">
+                    <div class="w-full h-full rounded-lg bg-gradient-to-b from-accent-black to-transparent">
+                    </div>
+                    <div class="hero-content py-7 sm:pt-20 sm:pb-52 text-center text-neutral-content">
+                        <div class="max-w-xl">
+                            <h1 class="sm:mb-5 mb-1 text-3xl sm:text-6xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+
+                            <p class="sm:mb-7 mb-3 text-base text-white font-normal">We supply highly quality organic products
+                            </p>
+                            <button
+                                class="btn btn-error bg-accent-red border-none capitalize text-base px-6 hover:bg-accent-red font-bold text-white">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 
